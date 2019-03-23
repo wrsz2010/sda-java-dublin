@@ -62,5 +62,19 @@ public class App {
             System.out.print("\n");
             i++;
         }
+        int result = sum(1,2,3,4,5,6);
+        System.out.println(result);
+    }
+
+    public static int sum(int ...elements) {
+
+        int temp = 0;
+
+        for (int i = 0; i < elements.length; i++) {
+            temp += elements[i];
+        }
+
+        return temp;
+
     }
 }

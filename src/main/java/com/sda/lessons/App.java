@@ -47,5 +47,20 @@ public class App {
             }
             System.out.print("\n");
         }
+
+        int i = 0;
+        int j = 0;
+
+        while ( i < tab4.length ) {
+
+            int[] innerTable = tab4[i];
+            int innerLength = innerTable.length;
+            while ( j < innerLength ) {
+                System.out.print(innerTable[j] + " ");
+                j++;
+            }
+            System.out.print("\n");
+            i++;
+        }
     }
 }
